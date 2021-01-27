@@ -30,7 +30,7 @@ AS
 BEGIN
 if @Death_Sum_Insured is null or @Occupation is null or @age is null 
 RAISERROR (15600,-1,-1, 'usp_get_monthly_death_premium_calc')
- 
+ select @Occupation
 	declare @factor numeric(5,2)
 	select @factor = factor from [dbo].[t_Factor_Rating] fr with(nolock)
 	join [dbo].[t_Rating_Occupation] ro with(nolock) on fr.Rating = ro.Rating

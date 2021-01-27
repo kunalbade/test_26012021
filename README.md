@@ -1,5 +1,7 @@
 # test_26012021
-
+***********************************************************************************************************************
+REQUIREMENT
+***********************************************************************************************************************
 The files in this repository are created for a specific scenario.
 User story:
 As a Member I would like to have an ability to choose various options on the screen, so that I can
@@ -23,7 +25,11 @@ reference tables and calculation
 3. Monthly death premium calculation
 Monthly Death Premium = (Death Cover amount * Occupation Rating Factor * Age)
 /1000 * 12
- 
+
+***********************************************************************************************************************
+SOLUTION AND ASSUMPTIONS
+***********************************************************************************************************************
+------------------- WEB CONFIG NEEDS TO BE UPDATED TO HAVE PROPER DATABASE NAME AND USER ID/PASSWORD-------------------
 
 The DB scripts are attached in the repository and they need to be executed in a specific sequence with sa permissions.
 1. Create_DB_Tables.SQL
@@ -39,3 +45,7 @@ this is the actual calculation procedure which will accept inputs from the front
 4 (Optional) Debug_query
 this query/script will help you to run the procedure from the database without any front end involvement.
 this can be used to test the various inputs and the results.
+
+5. Open the project. update the web config appropriately and run the project.
+start page will open in the browser with required text fields and drop down values.
+once the values in the drop down are change, the premium value will be fetched from the procedure and will be displayed.

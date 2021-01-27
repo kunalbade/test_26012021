@@ -23,15 +23,15 @@ print 'Data inserted into Factor Rating table..'
 insert into t_Rating_Occupation
 select 'Cleaner', 'Light Manual'
 union
-select 'Doctor', ' Professional'
+select 'Doctor', 'Professional'
 union
-select 'Author', ' White Collar'
+select 'Author', 'White Collar'
 union
-select 'Farmer', ' Heavy Manual'
+select 'Farmer', 'Heavy Manual'
 union
-select 'Mechanic', ' Heavy Manual'
+select 'Mechanic', 'Heavy Manual'
 union
-select 'Florist', ' Light Manual'
+select 'Florist', 'Light Manual'
 
 print 'Data inserted into Rating Occupation table..'
 
